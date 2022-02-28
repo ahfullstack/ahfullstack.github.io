@@ -1,0 +1,141 @@
+/* variables */
+:root{
+    --primary: #39403F;
+    --secondary: #ECE9E1;
+}
+
+/*reset */
+body,p,a,ul,li{
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/* base styles */
+body{
+    background: var(--secondary);
+    overflow-x: hidden;
+    font-family: 'Lato-Regular';
+    font-size: 20px;
+}
+.button{
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.button:hover{
+    color: #222;
+    background: var(--primary);
+    
+}
+
+/* fonts */
+@font-face {
+    font-family: "Lato";
+    src: url('assets/Lato/Lato-Regular.ttf');
+}
+h1,h2,h3,h4{
+    color: dddbff;
+    font-weight: normal;
+}
+p,a,li{
+    color: 9893d8;
+}
+h1,h3{
+    font-size: 1.2em;
+}
+/* mobile styles */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+.site-nav{
+    margin: 0 20px;
+}
+.site-nav ul{
+    display: none;
+}
+.site-nav h1{
+    grid-column: 1/4;
+    grid-row: 1;
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--primary2);
+}
+#welcome{
+    padding: 0 20px 20px 20px;
+
+}
+.welcome-text{
+    grid-column: 1/6;
+}
+.welcome-img{
+    grid-column: 6/9;
+}
+.welcome-img img{
+    width: 200px;
+}
+.welcome-text a{
+    margin: 20px 0;
+}
+#portfolio h3{
+    margin-bottom: 0;
+    text-align: center;    
+}
+.projects a{
+    grid-column: 1/9;
+    margin 20px 0;
+    display: flex;
+}
+.projects a *{
+    margin: 0 20px;
+    max-width: 40%;
+    align-self: center;
+}
+.projects h4{
+    color: #39403F;
+}
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+    
+}
+
+
+/* large tablet + Laptop styles */
+@media screen and (min-width:960px) {
+    body{
+        font-size: 18px;
+    }
+}
+
+
+/* desktop styles */
+@media screen and (min-width: 1200px) {
+    body{
+        font-size: 20px;
+    }
+}
+
+/* grid test */
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: centers;
+    gap: 10px;
+}
+
+
+img{
+    display: grid;
+    width: 500px;
+    border-radius: 20px;
+
+}
