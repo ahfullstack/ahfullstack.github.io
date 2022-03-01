@@ -59,9 +59,8 @@ h1,h3{
 .site-nav{
     margin: 0 20px;
 }
-.site-nav ul{
-    display: none;
-}
+
+
 .site-nav h1{
     grid-column: 1/4;
     grid-row: 1;
@@ -90,7 +89,7 @@ h1,h3{
 }
 .projects a{
     grid-column: 1/9;
-    margin 20px 0;
+    margin: 20px 0;
     display: flex;
 }
 .projects a *{
@@ -104,7 +103,32 @@ h1,h3{
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
-    
+    .welcome-text{
+        grid-column: 1/5;
+    }
+    .welcome-img{
+        grid-column: 5/9;
+    }
+    .welcome-img img{
+        width: 300px;
+    }
+    .projects{
+        margin-top: 40px;
+    }
+.projects a{
+    grid-column: span 4;
+    display: block;
+    margin: 20px 0;
+}
+
+.projects a *{
+    margin: 10px;
+    max-width: 60%;
+    margin: 10px 20%;
+}
+.projects h4{
+    text-align: center;
+}
 }
 
 
@@ -135,7 +159,5 @@ h1,h3{
 
 img{
     display: grid;
-    width: 500px;
     border-radius: 20px;
-
 }
