@@ -245,6 +245,7 @@ img {
 /*Bio*/
 .about__img {
   width: 200px;
+  max-width: 1fr;
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
