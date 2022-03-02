@@ -1,52 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="/styles.css">
-</head>
-<body>
-    <h1>Aaron Hubbard</h1>
-    <nav class="site-nav grid">
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#bio">Bio</a></li>
-            <li><a href="#home">Resume</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="#home">Links</a></li>
-        </ul>
-    </nav>
-    <section id="welcome" class="grid">
-        <div class="welcome-text">
-            <h2>Software Engineer<br />& Web Developer</h2>
-            <p class="leading">Lorem ipsum dolor sit amet consectetur adipisicing elit!</p>
-            <a href="#portfolio" class="button">View work</a>
-        </div>
-        <div class="welcome-img">
-            <img id="hero" src="assets/IMG_0237.jpg" alt="profile photo">
-        </div>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>Aaron Hubbard / Portfolio</title>
+    </head>
+    <body>
+         
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Aaron Hubbard</a>
 
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        
 
-    </section>
-    <section id="portfolio">
-        <h3>Projects</h3>
-        <div class="projects grid">
-            <a href="">
-                <img src="assets/project1.png" alt="Cupt Img">
-                <h4>Cupt Coffee</h4>
-            </a>
-            <a href="">
-                <img src="assets/project2.png" alt="La Barrons Img">
-                <h4>La Barrons</h4>
-            </a>
-            <a href="">
-                <img src="assets/project3.png" alt="Bella Img">
-                <h4>Bella Brows</h4>
-            </a>
-        </div>
-    </section>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link"> Bio
+                            </a>
+                        </li>
 
-</body>
+                        <li class="nav__item">
+                            <a href="#portfolio" class="nav__link">Portfolio
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="https://github.com/ahfullstack" target="blank" class="nav__link">GitHub
+                            </a>
+                        </li>
+
+                    </ul>
+                    
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <div class="nav__toggle" id="nav-toggle">
+                        +
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+     
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__content grid">
+                        <div class="home__data">
+                            <img src="/assets/ahlogo3.svg" alt="">
+                            <h3 class="home__subtitle">Web Designer + <br> Fullstack developer</h3>
+                            <p class="home__description">Experienced web designer Currently learning FullStack Software Development at General Assembly </p>
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <section class="about section" id="about">
+                <h2 class="section__title">Bio</h2>
+                <span class="section__subtitle"></span>
+
+                <div class="about__container container grid">
+                    <img src="assets/IMG_0237.jpg" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <p class="about__description">I love computers, I spend most of my time interacting with them. I have been building websites since I got my first computer when I was 11 years old.
+                        </p>
+
+                        <div class="about__info">
+                            <p> I'm designing and learning more everyday </p>
+                        </div>
+
+                        <div class="about__buttons">
+                            <a download="" href="assets/Aaron Hubbard - Resume 2022.pdf" class="button button--flex">
+                                Download My Resume <i class="uil uil-download-alt button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+        <section id="portfolio">
+            <h3 id="project-title">Portfolio</h3>
+            <div class="projects grid">
+                <a href="https://www.getcupt.com/" target="blank">
+                    <img src="assets/project1.png" alt="Cupt Img">
+                    <h4>Cupt Coffee</h4>
+                </a>
+                <a href="https://www.labarrons.com/" target="blank">
+                    <img src="assets/project2.png" alt="La Barrons Img">
+                    <h4>La Barrons</h4>
+                </a>
+                <a href="https://www.bellabrows7.com/" target="blank">
+                    <img src="assets/project3.png" alt="Bella Img">
+                    <h4>Bella Brows</h4>
+                </a>
+            </div>
+        </section>
+        </main>
+        <footer>
+        </footer>
+        <script src="all.js"></script>
+    </body>
 </html>
